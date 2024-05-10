@@ -9,7 +9,9 @@ class Field {
   constructor(field){
     this.field = field;
   }
-
+  print(){
+    console.log(this.field.join());
+  }
 }
 
 const myField = new Field([
@@ -18,4 +20,4 @@ const myField = new Field([
   ['░', '^', '░'],
 ]);
 
-
+myField.print()
